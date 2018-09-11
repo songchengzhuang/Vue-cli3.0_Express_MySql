@@ -46,6 +46,7 @@ app.use(
 );
 
 app.use(express.static(path.join(__dirname, "/service/dist")));
+app.use(express.static(path.join(__dirname, "/service/views")));
 
 app.use("/", indexRouter);
 app.use("/Interface", usersRouter);
