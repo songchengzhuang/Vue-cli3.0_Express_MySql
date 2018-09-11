@@ -11,7 +11,7 @@ vue3.0+express+mysql基础开发环境搭建（支持单页面和多页面开发
 
 3.浏览器打开 localhost：3000/ 单页面开发，vue打包dist在service目录中
 
-4.浏览器打开 localhost：3000/login 和浏览器打开 localhost：3000/loginlist 可查看多页面开发示范
+4.浏览器打开 localhost：3000/login 和浏览器打开 localhost：3000/loginlist 可查看[多页面开发示范]
 
 5.（重点）npm run serve   ---启动vue3.0脚手架 ，进行单页面开发
 
