@@ -1,22 +1,24 @@
 
-# Node的express练习
+# vue3.0+express+mysql基础开发环境搭建。
 
-Node的express练习结构搭建，连接MySql数据库。（添加功能可在此结构基础添加）
+vue3.0+express+mysql基础开发环境搭建（支持单页面和多页面开发）。
 
 1.下载，执行 npm i
 
-2.npm run start
+2.npm run start-node 启动express后台
+  
+  npm run build   ---vue单页面开发打包（这两步就可以看效果）
 
-3.浏览器打开 localhost：3000/
+3.浏览器打开 localhost：3000/ 单页面开发，vue打包dist在service目录中
 
-注册页：localhost：3000/
+4.浏览器打开 localhost：3000/login 和浏览器打开 localhost：3000/loginlist 可查看多页面开发示范
 
-信息列表页：localhost：3000/userList
+5.（重点）npm run serve   ---启动vue3.0脚手架 ，进行单页面开发
 
 
 # 目录
 
-views => 静态页
+service/views => 多页面静态页
 
 routes=>index.js 页面路由
 
