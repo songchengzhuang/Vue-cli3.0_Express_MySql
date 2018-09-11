@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <script src="http://lib.baomitu.com/axios/0.19.0-beta.1/axios.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>
+            信息注册-测试页
+        </h1>
+        <input id="loginName" type="text" placeholder="姓名">
+        <input id="loginAge" type="number" placeholder="年龄">
+        <input id="loginBtn" type="button" value="提交">
+        <p id="name">姓名</p>
+    </div>
+    <script>
+        var loginName = document.getElementById("loginName").value;
+        var loginAge = document.getElementById("loginAge").value;
+        var loginBtn = document.getElementById("loginBtn");
+        loginBtn.addEventListener("click", function () {
+            var loginName = document.getElementById("loginName").value;
+            var loginAge = document.getElementById("loginAge").value;
+            var loginBtn = document.getElementById("loginBtn");
+            console.log(loginName + "-----" + loginAge);
+            axios.post('/dealData', {
+                    name: loginName,
+                    age: loginAge
+                })
+                .then(function (res) {
+                    document.getElementById("name").innerHTML = res.data.data.name + '-' + res.data.data.age;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        })
+    </script>
+</body>
+
+</html>
