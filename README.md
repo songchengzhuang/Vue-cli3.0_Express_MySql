@@ -26,6 +26,8 @@ routes=>users.js 接口路由
 
 # mysql数据库
 
+service/config/sqlConfig.js   修改你的数据库参数！
+
 建库：websites
 
 建表：study_tbl
