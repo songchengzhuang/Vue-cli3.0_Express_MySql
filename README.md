@@ -7,7 +7,7 @@ vue3.0+express+mysql基础开发环境搭建（支持单页面和多页面开发
 
 2.npm run start-node 启动express后台
 
-  npm run serve 启动vue3.0脚手架
+  npm run serve 启动vue3.0脚手架 /
   npm run build vue单页面开发打包
 
 3.浏览器打开 localhost：3000/ 单页面开发，vue打包dist在service目录中
