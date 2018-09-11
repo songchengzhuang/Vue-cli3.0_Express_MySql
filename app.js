@@ -48,7 +48,7 @@ app.use(
 app.use(express.static(path.join(__dirname, "/service/dist")));
 
 app.use("/", indexRouter);
-app.use("/dealData", usersRouter);
+app.use("/Interface", usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

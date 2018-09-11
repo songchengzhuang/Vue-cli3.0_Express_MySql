@@ -18,7 +18,7 @@
     </div>
     <script>
         (function () {
-            axios.get('/dealData/getUserList')
+            axios.get('/interface/getUserList')
                 .then(function (res) {
                     console.log(res.data.data); // node的返回的数据在data中
                     if (res.data.code === 200 && res.data.success === true) {

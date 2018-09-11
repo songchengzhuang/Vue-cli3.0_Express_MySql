@@ -28,7 +28,7 @@
             var loginAge = document.getElementById("loginAge").value;
             var loginBtn = document.getElementById("loginBtn");
             console.log(loginName + "-----" + loginAge);
-            axios.post('/dealData', {
+            axios.post('/interface/postUser', {
                     name: loginName,
                     age: loginAge
                 })

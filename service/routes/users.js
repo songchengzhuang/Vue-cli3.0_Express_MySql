@@ -6,7 +6,7 @@ var router = express.Router();
 var query = require("../config/sqlConfig");
 
 /* post添加 */
-router.post("/", function(req, res) {
+router.post("/postUser", function(req, res) {
   // 输出 JSON 格式
   var response = {
     name: req.body.name,
