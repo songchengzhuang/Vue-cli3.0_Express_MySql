@@ -1,7 +1,7 @@
 
-# vue3.0+express+mysql基础开发环境搭建。
+# Vue-cli3.0+express+mysql基础开发环境搭建。
 
-vue3.0+express+mysql基础开发环境搭建（支持单页面和多页面开发）。
+Vue-cli3.0+express+mysql基础开发环境搭建（支持单页面和多页面开发）。
 
 1.下载，执行 npm i
 
